@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <meta name= "description" content="Pagina donde se encuentran los proyectos PAPIME"> <!-- Descripcion en el buscador-->
+    <meta name="robots" content="index,follow"> <!-- SEO para decirle a los robots de google que direccionen al index de mi apgina-->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="./css/style.css">
+ <link rel="stylesheet" href="./css/cuestionario.css">
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <title>PAPIME-UNAM</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Aragon_Jonhy_corel.jpg " width="30" height="30" class="d-inline-block align-top" alt="FES ARAGON" loading="lazy" href="index.html"> PAPIME
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
+                    </li>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="proyectos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Proyectos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="proyecto1.html">Proyecto 1</a>
+                                <a class="dropdown-item" href="#">Proyecto 2</a>
+                                <a class="dropdown-item" href="#">Proyecto 3</a>
+                                <a class="dropdown-item" href="#">Proyecto 4</a>
+                                <a class="dropdown-item" href="#">Proyecto 5</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="proyectos.html">Página de Proyectos</a> 
+                            </div>
+
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Buscar</button>
+                    </form>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <main>
+        <div class="container">
+            <section class="bgGold">
+                <div class="container"> 
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="title-block text-align--left" data-custom-mobile-width="false" data-custom-tablet-width="false" data-custom-desktop-width="false">
+                                <div class="accent" style="color: #FFFFFF">Proyecto 1 </div>
+                                <div><h2><span class="txt--6">Titulo.</span></h2></div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            <hr>
+            <class class="row">
+                <div class="col-md-2 mb-3">
+                    <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="objetivo-tab" data-toggle="tab" href="#objetivo" role="tab" aria-controls="objetivo" aria-selected="true">Objetivo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="introduccion-tab" data-toggle="tab" href="#introduccion" role="tab" aria-controls="introduccion" aria-selected="false">Introducción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="defpro-tab" data-toggle="tab" href="#defpro" role="tab" aria-controls="defpro" aria-selected="false">Definición del Problema</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="procedimiento-tab" data-toggle="tab" href="#procedimiento" role="tab" aria-controls="procedimiento" aria-selected="false">Procedimiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">Video</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="conclusiones-tab" data-toggle="tab" href="#conclusiones" role="tab" aria-controls="conclusiones" aria-selected="false">Conclusiones</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="cuestionario-tab" data-toggle="tab" href="#cuestionario" role="tab" aria-controls="cuestionario" aria-selected="false">Cuestionario</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.col-md-4 -->
+                <div class="col-md-10">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="objetivo" role="tabpanel" aria-labelledby="objetivo-tab">
+                            <h2>Objetivo</h2>
+                            <p>Diseñar un clasificador bayesiano ingenuo que permita predecir el comportamiento de un cliente.</p>
+                            <div   ><img src=" "   loading="lazy" alt="" width="50%" ></div>
+                        </div>
+                        <div class="tab-pane fade" id="introduccion" role="tabpanel" aria-labelledby="introduccion-tab">
+                            <h2>Introducción</h2>
+                            <p>Redacta tu introducción contestando a las siguientes preguntas</p>
+                            <p>1. ¿Qué es un sistema de recomendación?</p>
+                            <p>2. ¿Qué es el aprendizaje de máquinas?</p>
+                            <p>3. ¿Qué papel juegan la probabilidad y la estadística en los sistemas de recomendación?</p>
+                            <p>4. Explica a detalle el teorema de Bayes.</p>
+                            <p>5. ¿Qué es un clasificador bayesiano ingenuo?</p>
+                            <p>Esta sección deben ser mínimo 5 cuartillas con tus palabras o citando correctamente las fuentes si se requiere. Puedes usar fuentes en línea, pero no es válido hacer “copiar y pegar”.</p>
+                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <div><img src=" " loading="lazy" alt="" width="50%" ></div>
+                            </figure>
+                        </div>
+                        <div class="tab-pane fade" id="defpro" role="tabpanel" aria-labelledby="defpro-tab">
+                            <h2>Definición del Problema</h2>
+                            <p>En una cafetería se instala un robot que atenderá a los clientes. Se desea que el robot tenga iniciativa al atender al cliente, y recomiende productos antes de que se lo soliciten. El robot cuenta con un sistema de visión que le permite calcular la edad aproximada del cliente y cuenta con acceso a la web para saber la temperatura actual. A partir de la edad del cliente, y de la temperatura del día, el robot le recomendará una bebida fría o una bebida caliente.</p>
+                            <p>¿Cómo va a tomar esta decisión el robot? Es aquí donde entra la probabilidad y estadística. El robot contará con datos previos sobre compras realizadas. En cada compra se registró la edad del cliente, la temperatura del día, y el tipo de bebida que compró (fría o caliente). Estos datos se encuentran en un archivo de texto y servirán para que el robot aprenda lo que debe hacer cuando llegue un nuevo cliente. Este aprendizaje lo haremos con un algoritmo bastante sencillo que se conoce como clasificador ingenuo de Bayes, y que consiste en calcular probabilidades condicionales con ayuda de la regla de Bayes.</p>
+                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                                <div><img src=" " loading="lazy" alt="" width="50%"></div>
+                            </figure>
+                        </div>
+                        <div class="tab-pane fade" id="procedimiento" role="tabpanel" aria-labelledby="procedimiento-tab">
+                            <h2>Procedimiento</h2>
+                            <p>Desarrolla los siguientes puntos en el lenguaje de programación que quieras. En el reporte, muestra el segmento de código asociado a cada uno de los siguientes incisos, acompañado con una captura de pantalla que muestre el resultado obtenido. </p>
+                            <p>1.- Como parte de este proyecto se te proporciona un archivo csv que contiene 1000 registros de compra, indexados del 0 al 999. Cada registro contiene la edad (en años), la temperatura del momento en que se hizo la compra (en °C) y el tipo de bebida solicitada (0 es para frío, 1 es para caliente). Lee los datos del archivo y almacénalos en una estructura de datos dentro de tu programa (por ejemplo, en un arreglo).  Imprime en pantalla los datos de las primeras cinco compras y de las últimas cinco compras. </p>
+                            <p>2.- Mediante tu lenguaje de programación, genera el diagrama de dispersión de los datos. Observa la gráfica y contesta: ¿puedes identificar algún patrón en la decisión de consumir bebidas frías o calientes dependiendo de la edad o de la temperatura del día?</p>
+                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                                <div><img src="images/Captura-de-Pantalla-2020-10-18-a-las-11.43.06.png" class="img-fluid"   alt="grafica"></div>
+                                <figcaption>Fig 1</figcaption>
+                            </figure>
+                            <p>3.- Crea una nueva tabla con los datos categorizados de esta manera. </p>
+                            <p>Edades:</p>
+                            <p>• menor. - si la edad es menor que 18 años. </p>
+                            <p>• adulto. - si la edad es mayor o igual a 18 años, y menor que 60 años. </p>
+                            <p>• mayor. - si la edad es mayor o igual a 60 años. </p>
+                            <p>Temperatura:</p>
+                            <p>• frío. - si la temperatura es menor o igual a 10°C</p>
+                            <p>• templado. – si la temperatura es mayor a 10°C y menor a 20°C</p>
+                            <p>• cálido. - si la temperatura es mayor o igual a 20°C</p>
+                            <p>Tipo de bebida:</p>
+                            <p>• fría</p>
+                            <p>• caliente</p>
+                            <p>De tu nueva tabla categorizada, imprime en pantalla los datos de las primeras cinco compras y de las últimas cinco compras.</p>
+                            <p>4.- Usaremos tres variables aleatorias:  X para la edad, Y para la temperatura y Z para el tipo de bebida. Calcula las distribuciones de probabilidad de X, Y y Z y muéstralas en formato de tabla:</p>
+                            <p><em><strong>Distribucion de probabilidad de X</strong></em></p>
+                            <div style="text-align:center;">
+                                
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">X=x</th>
+                                            <th scope="col">P(X=x)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>X=menor</td>
+                                            <td  >P(X=menor)=</td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=adulto</td>
+                                            <td  >P(X=adulto)=</td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=mayor</td>
+                                            <td  >P(X=mayor)=</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    
+                            <p><em><strong>Distribucion de probabilidad de Y</strong></em></p>
+                            <div style="text-align:center;">
+                                
+                                <table style="margin: 0 auto;">
+                                    <tr>
+                                    
+                                    <th>Y=y</th>
+                                    <th>P(Y=y)</th>
+                                    </tr>
+                                    <tr>
+                                    <td>Y=frío</td>
+                                    <td  >P(Y=frío)=</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Y=templado</td>
+                                    <td  >P(Y=templado)=</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    <td>Y=cálido</td>
+                                    <td  >P(y=cálido)=</td>
+                                    </tr>
+                                    
+                                </table>
+                            </div>
+                            <p><em><strong>Distribucion de probabilidad de Z</strong></em></p>
+                            <div style="text-align:center;">
+                                
+                                <table style="margin: 0 auto;">
+                                    <tr>
+                                    
+                                    <th>Z=z</th>
+                                    <th>P(Z=z)</th>
+                                    </tr>
+                                    <tr>
+                                    <td>Z=fría</td>
+                                    <td  >P(Z=fría)=</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Z=caliente</td>
+                                    <td  >P(Z=caliente)=</td>
+                                    </tr>
+                                    
+                                    
+                                    
+                                </table>
+                            </div>
+                            <p>La distribución de Z es la <strong>probabilidad a priori.</strong></p>
+                            <p>5.- Calcula la distribución conjunta de X y Y. Muéstrala en formato de tabla.</p>
+                            <figure style="max-width:904pxpx" id="w-node-298dfb61ff0f-77efce27" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                                <div><img src="images/Captura-de-Pantalla-2020-10-18-a-las-11.47.05.png" class="img-fluid"   alt="table1"></div>
+                                <figcaption>Fig 2</figcaption>
+                            </figure>
+                            <p>‍</p>
+                            <p>Esta tabla es la <strong>evidencia</strong>.</p>
+                            <p>6.- Calcula la probabilidad condicional P (X=x, Y=y |Z=z). Muéstralo en formato de tabla:</p>
+                            <figure style="max-width:860pxpx" id="w-node-3f0ec88328df-77efce27" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                                <div><img src="images/Captura-de-Pantalla-2020-10-18-a-las-11.51.32.png" class="img-fluid"   alt="table2"></div>
+                                <figcaption>Fig 3</figcaption>
+                            </figure>
+                            <p>Esta tabla es la <strong>verosimilitud o likelihood</strong>.</p>
+                            <p>7.- Este último punto es el elemento central del programa (y el que determina si tu proyecto tiene éxito o no). </p>
+                            <p>El programa pregunta al usuario los datos del nuevo cliente (ya categorizados), y debe decidir qué tipo de bebida recomendar. La interfaz debe ser OBLIGATORIAMENTE de esta forma (lo que está en azul es lo que escribe la computadora, y lo que está en rojo es lo que escribe el usuario).</p>
+                            <figure style="max-width:831pxpx" id="w-node-cbfc414966bc-77efce27" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                                <div><img src="images/Captura-de-Pantalla-2020-10-18-a-las-11.52.37.png" class="img-fluid"   alt="table3"></div>
+                                <figcaption>Fig 4 </figcaption>
+                            </figure>
+                            <p>Por supuesto, que la sugerencia es resultado de aplicar un clasificador ingenuo de Bayes. </p>
+                            <p>El cálculo en este último paso es bastante sencillo. Suponiendo los datos del ejemplo, se tiene que X=mayor, Y=frío. </p>
+                            <p>Utilizando el teorema de Bayes se calculan dos resultados:</p>
+                            <p>a) P (Z=fría | X=mayor, Y=frío)</p>
+                            <p>b) P (Z=caliente |X=mayor, Y=frío)</p>
+                            <p>Si a&gt;b, entonces el robot debe ofrecer la bebida fría, de lo contrario deberá ofrecer la bebida caliente. Esta decisión en la que se elige al máximo es lo que se conoce como clasificador de Bayes ingenuo. </p>
+                            <p>Pista: el cálculo del inciso a se realiza utilizando los datos que obtuviste en la tabla 4, 5 y 6.</p>
+                            
+                            <p class="formula">
+                                
+                                \[P(Z=fría|X = mayor,Y=frío) = {P(Z=fría)P(X=mayor, Y=frío|Z=fría)\over P(x=mayor, Y = frío)}.\]
+                    
+                            
+                            </p>
+                            <p>‍</p>
+                            <p>Para este último inciso, incluye capturas de pantalla del resultado ingresando TODAS las combinaciones de edad y temperatura.</p>
+                            <p>‍</p>
+                            <p>‍</p>
+                            <p>‍</p>
+                            <p>‍</p>
+                
+                        </div>
+                        <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+                            <h2>Video</h2>
+                            <p>Deberás crear un video de tu programa siendo ejecutado en una computadora.</p>
+                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/VQiQK1EMR-k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </figure>                 -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VQiQK1EMR-k" allowfullscreen></iframe>
+                            </div>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="conclusiones" role="tabpanel" aria-labelledby="conclusiones-tab">
+                            <h2>Conclusiones</h2>
+                            <p>Responde:</p>
+                            <p>1. ¿Cómo podrías medir la utilidad de las predicciones de tu sistema de recomendación?</p>
+                            <p>2. ¿Se podría omitir la fase de categorización y trabajar con distribuciones continuas? ¿Cuáles serían las ventajas y desventajas?</p>
+                            <p>3. ¿Crees que el resultado mejoraría si utilizamos una categorización más fina en ambas variables? Por ejemplo, definir cinco categorías de edades y cinco de temperatura.</p>
+                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <div><img src=" " loading="lazy" alt="" width="50%"></div>
+                            </figure>    
+                        </div>
+                        <!--Cuestionario-->
+                        <div class="tab-pane fade" id="cuestionario" role="tabpanel" aria-labelledby="cuestionario-tab">
+                            <h2>Cuestionario</h2>
+                            <div class="accent" style="color: #000">Responde las siguientes preguntas </div>
+                            <section>
+                                <form action="" name="quizForm" onsubmit="return verificarRespuestas()">
+                    
+                                    <h4>1. Pregunta</h4>
+                                    <input type="radio" name="p1" id="" value="a">A. Opción A <br/>
+                                    <input type="radio" name="p1" id="" value="b">B. Opción B <br/>
+                                    <input type="radio" name="p1" id="" value="c">C. Opción C <br/>
+                                    <input type="radio" name="p1" id="" value="d">D. Opción D <br/>
+                                    </br>
+                                    <h4>2. Pregunta</h4>
+                                    <input type="radio" name="p2" id="" value="a">A. Opción A <br/>
+                                    <input type="radio" name="p2" id="" value="b">B. Opción B <br/>
+                                    <input type="radio" name="p2" id="" value="c">C. Opción C <br/>
+                                    <input type="radio" name="p2" id="" value="d">D. Opción D <br/>
+                                    </br>
+                                    <h4>3. Pregunta</h4>
+                                    <input type="radio" name="p3" id="" value="a">A. Opción A <br/>
+                                    <input type="radio" name="p3" id="" value="b">B. Opción B <br/>
+                                    <input type="radio" name="p3" id="" value="c">C. Opción C <br/>
+                                    <input type="radio" name="p3" id="" value="d">D. Opción D <br/>
+                                    </br>
+                                    <h4>4. Pregunta</h4>
+                                    <input type="radio" name="p4" id="" value="a">A. Opción A <br/>
+                                    <input type="radio" name="p4" id="" value="b">B. Opción B <br/>
+                                    <input type="radio" name="p4" id="" value="c">C. Opción C <br/>
+                                    <input type="radio" name="p4" id="" value="d">D. Opción D <br/>
+                                    </br>
+                                    <h4>5. Pregunta</h4>
+                                    <input type="radio" name="p5" id="" value="a">A. Opción A <br/>
+                                    <input type="radio" name="p5" id="" value="b">B. Opción B <br/>
+                                    <input type="radio" name="p5" id="" value="c">C. Opción C <br/>
+                                    <input type="radio" name="p5" id="" value="d">D. Opción D <br/>
+                                    </br>
+                                    <input type="submit" value="Enviar">
+                                    <input type="reset" value="Nuevo intento">
+                                    <div id="resultado">
+                    
+                                    </div>
+                                </form>
+                            </section>
+                        </div>
+                        
+                    </div>
+                </div>
+            </class><!-- /.col-md-8 -->
+        </div>   
+    </main>
+    <footer class="bgDark">
+        <div class="container">
+            <img src=" data:image/jpeg;base64,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" alt="..." class="rounded-circle" style="width: 90px; height: 90px;">
+        <br> <br/>
+        </div>
+            <div class="row">
+                <div class="col-sm">
+                    <h5> </h5>
+                </div>
+                <div class="col-sm">
+                    <h5> </h5>
+                </div>
+                <div class="col-sm">
+                    <h5> </h5>
+                </div>
+            </div>
+    </footer>
+     
+    <script src="./js/script.js"></script>
+     
+</body>
+</html>
