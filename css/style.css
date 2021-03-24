@@ -138,6 +138,7 @@ section { padding: 120px 0; }
     background-color: #042b5c;  padding: 10px 0;
     text-align: center;
     color: #ffffff;
+    font-size: 20px;
 }
 .bgGold { 
     background-color: #e6b219; 
@@ -172,3 +173,9 @@ td{
     text-align: center;
     color: #ffffff;
 } 
+.accent {
+    font-size: 20px;
+}
+table{
+    font-size: 12px;
+}

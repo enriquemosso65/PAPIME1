@@ -27,10 +27,14 @@
 
 <body>
     <header>
+        
+        
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Aragon_Jonhy_corel.jpg " width="30" height="30" class="d-inline-block align-top" alt="FES ARAGON" loading="lazy" href="index.html"> PAPIME
+                <img src="./images/logo-unam.png" width="60" height="60" class="d-inline-block align-top" alt="FES ARAGON" loading="lazy" href="index.html"> 
+                
             </a>
+            Proyecto <br> UNAM-DGAPA-PAPIME <br> PE107420 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,36 +43,12 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
                     </li>
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="proyectos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Proyectos
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="proyecto1.html">Proyecto 1</a>
-                                <a class="dropdown-item" href="#">Proyecto 2</a>
-                                <a class="dropdown-item" href="#">Proyecto 3</a>
-                                <a class="dropdown-item" href="#">Proyecto 4</a>
-                                <a class="dropdown-item" href="#">Proyecto 5</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="proyectos.html">Página de Proyectos</a> 
-                            </div>
-
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Buscar</button>
-                    </form>
-
                 </ul>
             </div>
-
         </nav>
+        
     </header>
+    <br>
     <br>
     <br>
     <br>
@@ -79,8 +59,9 @@
                     <div class="row">
                         <div class="col-sm">
                             <div class="title-block text-align--left" data-custom-mobile-width="false" data-custom-tablet-width="false" data-custom-desktop-width="false">
-                                <div class="accent" style="color: #FFFFFF">Proyecto 1 </div>
-                                <div><h2><span class="txt--6">Titulo.</span></h2></div>
+                                <div><h3><span class="txt--6">Proyecto 1.</span></h3></div>
+                                <div class="accent" >Aplicaciones del Teorema de Bayes en Aprendizaje de Máquinas: creación de un sistema de recomendaciones </div>
+                                
                             </div>
                         </div>
                     </div>  
@@ -102,15 +83,15 @@
                         <li class="nav-item">
                             <a class="nav-link" id="procedimiento-tab" data-toggle="tab" href="#procedimiento" role="tab" aria-controls="procedimiento" aria-selected="false">Procedimiento</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">Video</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" id="conclusiones-tab" data-toggle="tab" href="#conclusiones" role="tab" aria-controls="conclusiones" aria-selected="false">Conclusiones</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                         <a class="nav-link" id="cuestionario-tab" data-toggle="tab" href="#cuestionario" role="tab" aria-controls="cuestionario" aria-selected="false">Cuestionario</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <!-- /.col-md-4 -->
@@ -149,7 +130,7 @@
                             <p>2.- Mediante tu lenguaje de programación, genera el diagrama de dispersión de los datos. Observa la gráfica y contesta: ¿puedes identificar algún patrón en la decisión de consumir bebidas frías o calientes dependiendo de la edad o de la temperatura del día?</p>
                             <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/Captura-de-Pantalla-2020-10-18-a-las-11.43.06.png" class="img-fluid"   alt="grafica"></div>
-                                <figcaption>Fig 1</figcaption>
+                                <figcaption> </figcaption>
                             </figure>
                             <p>3.- Crea una nueva tabla con los datos categorizados de esta manera. </p>
                             <p>Edades:</p>
@@ -167,7 +148,6 @@
                             <p>4.- Usaremos tres variables aleatorias:  X para la edad, Y para la temperatura y Z para el tipo de bebida. Calcula las distribuciones de probabilidad de X, Y y Z y muéstralas en formato de tabla:</p>
                             <p><em><strong>Distribucion de probabilidad de X</strong></em></p>
                             <div style="text-align:center;">
-                                
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
@@ -191,73 +171,242 @@
                                     </tbody>
                                 </table>
                             </div>
-                    
                             <p><em><strong>Distribucion de probabilidad de Y</strong></em></p>
                             <div style="text-align:center;">
-                                
-                                <table style="margin: 0 auto;">
-                                    <tr>
-                                    
-                                    <th>Y=y</th>
-                                    <th>P(Y=y)</th>
-                                    </tr>
-                                    <tr>
-                                    <td>Y=frío</td>
-                                    <td  >P(Y=frío)=</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Y=templado</td>
-                                    <td  >P(Y=templado)=</td>
-                                    </tr>
-                                    
-                                    <tr>
-                                    <td>Y=cálido</td>
-                                    <td  >P(y=cálido)=</td>
-                                    </tr>
-                                    
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Y=y</th>
+                                            <th scope="col">P(Y=y)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Y=frío</td>
+                                            <td  >P(Y=frío) =</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Y=templado</td>
+                                            <td  >P(Y=templado) =</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Y=cálido</td>
+                                            <td  >P(Y=cálido) = </td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </div>
                             <p><em><strong>Distribucion de probabilidad de Z</strong></em></p>
                             <div style="text-align:center;">
-                                
-                                <table style="margin: 0 auto;">
-                                    <tr>
-                                    
-                                    <th>Z=z</th>
-                                    <th>P(Z=z)</th>
-                                    </tr>
-                                    <tr>
-                                    <td>Z=fría</td>
-                                    <td  >P(Z=fría)=</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Z=caliente</td>
-                                    <td  >P(Z=caliente)=</td>
-                                    </tr>
-                                    
-                                    
-                                    
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Z=z</th>
+                                            <th scope="col">P(Z=z)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Z=fría</td>
+                                            <td  >P(Z=fría) =</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Z=caliente</td>
+                                            <td  >P(Z=caliente) =</td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </div>
                             <p>La distribución de Z es la <strong>probabilidad a priori.</strong></p>
                             <p>5.- Calcula la distribución conjunta de X y Y. Muéstrala en formato de tabla.</p>
-                            <figure style="max-width:904pxpx" id="w-node-298dfb61ff0f-77efce27" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                                <div><img src="images/Captura-de-Pantalla-2020-10-18-a-las-11.47.05.png" class="img-fluid"   alt="table1"></div>
-                                <figcaption>Fig 2</figcaption>
-                            </figure>
-                            <p>‍</p>
+                            <div >
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">X=x</th>
+                                            <th scope="col">Y=y</th>
+                                            <th scope="col">P (X=x, Y=y)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>X=menor </td>
+                                            <td>Y=frío</td>
+                                            <td>P (X=menor, Y=frío) = </td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=menor </td>
+                                            <td>Y=templado </td>
+                                            <td>P (X=menor, Y=templado) = </td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=menor</td>
+                                            <td>Y=cálido</td>
+                                            <td>P (X=menor, Y=cálido) =</td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=adulto </td>
+                                            <td>Y=frío </td>
+                                            <td>P (X=adulto, Y=frío) =</td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=adulto </td>
+                                            <td>Y=templado </td>
+                                            <td>P (X=adulto, Y=templado) = </td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=adulto </td>
+                                            <td>Y=cálido </td>
+                                            <td>P (X=adulto, Y=cálido) = </td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=mayor </td>
+                                            <td>Y=frío </td>
+                                            <td>P (X=mayor, Y=frío) =</td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=mayor </td>
+                                            <td>Y=templado </td>
+                                            <td>P (X=mayor, Y=templado) = </td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=mayor </td>
+                                            <td>Y=cálido </td>
+                                            <td>P (X=mayor, Y=cálido) = </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> 
                             <p>Esta tabla es la <strong>evidencia</strong>.</p>
                             <p>6.- Calcula la probabilidad condicional P (X=x, Y=y |Z=z). Muéstralo en formato de tabla:</p>
-                            <figure style="max-width:860pxpx" id="w-node-3f0ec88328df-77efce27" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                                <div><img src="images/Captura-de-Pantalla-2020-10-18-a-las-11.51.32.png" class="img-fluid"   alt="table2"></div>
-                                <figcaption>Fig 3</figcaption>
-                            </figure>
+                            <div >
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">X=x</th>
+                                            <th scope="col">Y=y</th>
+                                            <th scope="col">Z=z</th>
+                                            <th scope="col">P (X=x, Y=y |Z=z)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>X=menor </td>
+                                            <td>Y=frío</td>
+                                            <td>Z=fría</td>
+                                            <td>P (X=menor, Y=frío |Z=fría) =</td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=menor </td>
+                                            <td>Y=frío </td>
+                                            <td>Z=caliente</td>
+                                            <td>P (X=menor, Y=frío |Z=caliente) =</td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=menor</td>
+                                            <td>Y=templado</td>
+                                            <td>Z=fría</td>
+                                            <td>...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=menor</td>
+                                            <td>Y=templado</td>
+                                            <td>Z=caliente</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=menor</td>
+                                            <td>Y=cálido </td>
+                                            <td>Z=fría</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=menor </td>
+                                            <td>Y=cálido </td>
+                                            <td>Z=caliente</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=adulto </td>
+                                            <td>Y=frío </td>
+                                            <td>Z=fría </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=adulto </td>
+                                            <td>Y=frío </td>
+                                            <td>Z=caliente </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=adulto </td>
+                                            <td>Y=templado </td>
+                                            <td>Z=fría </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=adulto </td>
+                                            <td>Y=templado </td>
+                                            <td>Z=caliente </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=adulto   </td>
+                                            <td>Y=cálido  </td>
+                                            <td>Z=fría  </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=adulto   </td>
+                                            <td>Y=cálido  </td>
+                                            <td>Z=caliente  </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=mayor  </td>
+                                            <td>Y=frío  </td>
+                                            <td>Z=fría  </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=mayor  </td>
+                                            <td>Y=frío  </td>
+                                            <td>Z=caliente </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=mayor  </td>
+                                            <td>Y=templado  </td>
+                                            <td>Z=fría  </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=mayor  </td>
+                                            <td>Y=templado  </td>
+                                            <td>Z=caliente  </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=mayor  </td>
+                                            <td>Y=cálido  </td>
+                                            <td>Z=fría  </td>
+                                            <td>...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>X=mayor  </td>
+                                            <td>Y=cálido </td>
+                                            <td>Z=caliente  </td>
+                                            <td>P (X=mayor, Y=cálido |Z=caliente) =</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> 
                             <p>Esta tabla es la <strong>verosimilitud o likelihood</strong>.</p>
                             <p>7.- Este último punto es el elemento central del programa (y el que determina si tu proyecto tiene éxito o no). </p>
                             <p>El programa pregunta al usuario los datos del nuevo cliente (ya categorizados), y debe decidir qué tipo de bebida recomendar. La interfaz debe ser OBLIGATORIAMENTE de esta forma (lo que está en azul es lo que escribe la computadora, y lo que está en rojo es lo que escribe el usuario).</p>
                             <figure style="max-width:831pxpx" id="w-node-cbfc414966bc-77efce27" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                                 <div><img src="images/Captura-de-Pantalla-2020-10-18-a-las-11.52.37.png" class="img-fluid"   alt="table3"></div>
-                                <figcaption>Fig 4 </figcaption>
+                                <figcaption> </figcaption>
                             </figure>
                             <p>Por supuesto, que la sugerencia es resultado de aplicar un clasificador ingenuo de Bayes. </p>
                             <p>El cálculo en este último paso es bastante sencillo. Suponiendo los datos del ejemplo, se tiene que X=mayor, Y=frío. </p>
@@ -270,8 +419,7 @@
                             <p class="formula">
                                 
                                 \[P(Z=fría|X = mayor,Y=frío) = {P(Z=fría)P(X=mayor, Y=frío|Z=fría)\over P(x=mayor, Y = frío)}.\]
-                    
-                            
+
                             </p>
                             <p>‍</p>
                             <p>Para este último inciso, incluye capturas de pantalla del resultado ingresando TODAS las combinaciones de edad y temperatura.</p>
@@ -281,17 +429,17 @@
                             <p>‍</p>
                 
                         </div>
-                        <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+                        <!-- <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
                             <h2>Video</h2>
                             <p>Deberás crear un video de tu programa siendo ejecutado en una computadora.</p>
-                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/VQiQK1EMR-k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </figure>                 -->
+                            </figure>                
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VQiQK1EMR-k" allowfullscreen></iframe>
                             </div>
                             
-                        </div>
+                        </div> -->
                         <div class="tab-pane fade" id="conclusiones" role="tabpanel" aria-labelledby="conclusiones-tab">
                             <h2>Conclusiones</h2>
                             <p>Responde:</p>
@@ -303,7 +451,7 @@
                             </figure>    
                         </div>
                         <!--Cuestionario-->
-                        <div class="tab-pane fade" id="cuestionario" role="tabpanel" aria-labelledby="cuestionario-tab">
+                        <!-- <div class="tab-pane fade" id="cuestionario" role="tabpanel" aria-labelledby="cuestionario-tab">
                             <h2>Cuestionario</h2>
                             <div class="accent" style="color: #000">Responde las siguientes preguntas </div>
                             <section>
@@ -346,7 +494,7 @@
                                     </div>
                                 </form>
                             </section>
-                        </div>
+                        </div> -->
                         
                     </div>
                 </div>
@@ -370,8 +518,6 @@
                 </div>
             </div>
     </footer>
-     
     <script src="./js/script.js"></script>
-     
 </body>
 </html>
