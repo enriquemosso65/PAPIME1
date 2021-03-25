@@ -59,7 +59,7 @@
                     <div class="row">
                         <div class="col-sm">
                             <div class="title-block text-align--left" data-custom-mobile-width="false" data-custom-tablet-width="false" data-custom-desktop-width="false">
-                                <div><h3><span class="txt--6">Proyecto 2.</span></h3></div>
+                                <div><h3><span class="txt--6">Proyecto 4.</span></h3></div>
                                 <div class="accent" >Aplicación de los conceptos fundamentales del modelo de investigación de operaciones en Toma de Decisiones: solución del problema de la mochila mediante Algoritmos Genéticos. </div>
                                 
                             </div>
@@ -81,7 +81,13 @@
                             <a class="nav-link" id="defpro-tab" data-toggle="tab" href="#defpro" role="tab" aria-controls="defpro" aria-selected="false">Definición del Problema</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" id="estrategia-tab" data-toggle="tab" href="#estrategia" role="tab" aria-controls="estrategia" aria-selected="false">Estrategia de solución</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" id="procedimiento-tab" data-toggle="tab" href="#procedimiento" role="tab" aria-controls="procedimiento" aria-selected="false">Procedimiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="reporte-tab" data-toggle="tab" href="#reporte" role="tab" aria-controls="reporte" aria-selected="false">Reporte de resultados</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">Video</a>
@@ -99,30 +105,112 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="objetivo" role="tabpanel" aria-labelledby="objetivo-tab">
                             <h2>Objetivo</h2>
-                            <p></p>
+                            <p>Diseñar un programa que resuelva el problema de la mochila utilizando algoritmos genéticos. </p>
                             <div   ><img src=" "   loading="lazy" alt="" width="50%" ></div>
                         </div>
                         <div class="tab-pane fade" id="introduccion" role="tabpanel" aria-labelledby="introduccion-tab">
                             <h2>Introducción</h2>
                             <!-- etiquetas p -->
-                            <p></p>
+                            <p>Redacta tu introducción contestando a las siguientes preguntas</p>
+                            <p>1.	¿Qué es la investigación de operaciones? </p>
+                            <p>2.	¿Cuál es el modelo de investigación de operaciones? </p>
+                            <p>3.	¿Cuál es la importancia de la toma de decisiones en investigación de operaciones?</p>
+                            <p>4.	¿Cuál es el impacto del número de variables en la toma de una decisión? ¿Es más difícil tomar decisiones cuando hay más variables? </p>
+                            <p>5.	¿Qué es el espacio de soluciones? </p>
+                            <p>6.	¿Qué es una solución óptima? </p>
+                            <p>7.	¿Las computadoras pueden tomar decisiones? </p>
+
                             <figure class="w-richtext-align-center w-richtext-figure-type-image">
                             <div><img src=" " loading="lazy" alt="" width="50%" ></div>
                             </figure>
                         </div>
                         <div class="tab-pane fade" id="defpro" role="tabpanel" aria-labelledby="defpro-tab">
                             <h2>Definición del Problema</h2>
-                            <p> </p>
-                            <p> </p>
+                            <p>El problema de la mochila es similar al de una persona cuando está empacando su maleta para irse de vacaciones: debe decidir qué objetos son los más indispensables, considerando que existe un límite en el peso de su maleta.   </p>
+                            <p>De manera formal, podemos definir el problema de la mochila de esta forma: una persona tiene una colección de objetos <i>x_1,x_2,…,x_n</i>. El objeto <i>x_i</i> tiene un peso <i>w_i≥0</i> y una utilidad o recompensa por llevarlo <i>r_i≥0</i>. La persona debe elegir un subconjunto de los objetos de manera que la suma de sus pesos no exceda la capacidad máxima de su mochila <i>C</i> y que la suma de las utilidades de los objetos sea máxima. </p>
+                            <p>Por ejemplo, imaginemos que Antonio está decidiendo qué objetos llevar hoy a la escuela en su mochila que tiene capacidad máxima de 3000 g. Antonio asigna una utilidad del objeto utilizando un número de 0 a 10 tomando en cuenta las características del día (por ejemplo, hoy es un día soleado y llevar el paraguas no es tan indispensable, mientras que llevar su laptop es muy importante porque tiene una clase en la que tiene que realizar un ejercicio de programación). </p>
+                            <div >
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"</th>
+                                            <th scope="col">Objeto</th>
+                                            <th scope="col">Peso(g)</th>
+                                            <th scope="col"</th>Utilidad</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>\[{x_1 }\] </td>
+                                            <td>Laptop</td>
+                                            <td>2000</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\[{x_2 }\] </td>
+                                            <td>Paraguas</td>
+                                            <td>500</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\[{x_3 }\] </td>
+                                            <td>Lunch </td>
+                                            <td>500</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\[{x_4 }\] </td>
+                                            <td>Cuaderno</td>
+                                            <td>300</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\[{x_5 }\] </td>
+                                            <td>Consola portátil de videojuego</td>
+                                            <td>300</td>
+                                            <td>5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>Cualquier subconjunto de objetos cuya suma de pesos no supere la capacidad de la mochila es una solución al problema. Veamos tres ejemplos:</p>
+                                    <p>Ejemplo 1:  Laptop, Paraguas, Lunch, Cuaderno.  Peso = 2000 + 500 + 500 + 300 = 3300. No es una solución porque excede la capacidad máxima de la mochila. </p>
+                                    <p>Ejemplo 2: Laptop, Paraguas y Cuaderno. Peso = 2000 + 500 + 300 = 2800. Es una solución factible. Utilidad = 10 + 2 + 8 = 20</p>
+                                    <p>Ejemplo 3: Laptop, Lunch, Cuaderno. Peso = 2000 + 500 + 300 = 2800. Es una solución factible. Utilidad = 10 + 6 + 8 = 24. </p>
+                                    <p>El ejemplo 2 y 3 forman parte del espacio de soluciones de este problema, pero la solución 3 es mejor que la solución 2 (porque tiene una mejor utilidad). </p>
+                                    <p>La pregunta es, ¿cuál es la mejor solución? Responder esto es lo mismo que preguntar ¿cuál es la solución con la mayor utilidad? o ¿cuál es la solución óptima?</p>
+                            </div> 
                             <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src=" " loading="lazy" alt="" width="50%"></div>
                             </figure>
                         </div>
+                        <div class="tab-pane fade" id="estrategia" role="tabpanel" aria-labelledby="estrategia-tab">
+                            <h2>Estrategia de solución</h2>
+                            <p>El problema de la mochila es fácil de entender, pero encontrar su solución se complica cuando el número de objetos involucrados en el problema comienza a crecer. Una de las estrategias para resolver este problema es el uso de algoritmos genéticos. </p>
+                            <p>Realiza una investigación detallada sobre qué es un algoritmo genético y su metodología. Mínimo 5 cuartillas con tus palabras o citando correctamente las fuentes si se requiere. Puedes usar fuentes en línea, pero no es válido hacer “copiar y pegar”. </p>
+                        </div>
                         <div class="tab-pane fade" id="procedimiento" role="tabpanel" aria-labelledby="procedimiento-tab">
-                            <h2>Procedimiento</h2>
-                            <p>  </p>
-                            
-                
+                            <h2>Producto por desarrollar</h2>
+                            <p>Implementa un programa para solucionar el problema de la mochila con algoritmos genéticos. Tu programa debe iniciar solicitando los datos al usuario OBLIGATORIAMENTE CON ESTE FORMATO (lo que viene en azul es lo que escribe la computadora y lo que viene en rojo los datos introducidos por el usuario):</p>
+                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                                <div><img src="images/proyecto4/p4-1.png" class="img-fluid"   alt="Imagen-prueba"></div>
+                                <figcaption> </figcaption>
+                            </figure>
+                            <p>El usuario puede elegir el número de objetos entre 1 y 100. Los pesos y las utilidades de todos los objetos son enteros mayores o igual a cero.</p>
+                            <p>Cuando el usuario termina de ingresar todos los datos, el programa le preguntará cuántas generaciones quiere en su algoritmo genético. Cuando termina de ejecutarlas, muestra la mejor solución que encontró hasta el momento. </p>
+                            <p>El programa le pregunta si quiere seguir buscando. Si el usuario le dice que sí, el programa le pregunta cuántas generaciones más desea generar (el programa debe utilizar la última generación que incluye la mejor respuesta hasta el momento para crear la siguiente generación, es decir, no debes reiniciar la población y volver a empezar de cero). </p>
+                            <p>El programa seguirá buscando nuevas respuestas y preguntando al usuario si desea continuar hasta que obtenga como respuesta un no (N).</p>
+                        </div>
+                        <div class="tab-pane fade" id="reporte" role="tabpanel" aria-labelledby="reporte-tab">
+                            <h2>Reporte de resultados</h2>
+                            <p>Para mostrar el resultado de tu proyecto debes:</p>
+                            <p>1.	Incluir el código fuente completo </p>
+                            <p>2.	Presentar tres casos de prueba distintos. Para cada uno de ellos muestra claramente la tabla que contiene el nombre del objeto, peso y utilidad, y muestra capturas de pantalla de los resultados obtenidos.
+                                
+                            </p>
+                            <p class="lista">a.	Uno con cinco objetos (usa como ejemplo el que se explicó en este documento).</p>
+                            <p class="lista">b.	Uno con diez objetos.</p>
+                            <p class="lista">c.	Uno con 20 objetos. </p>
+                            <p>3.	Deberás crear un video de tu programa siendo ejecutado en una computadora. </p>
                         </div>
                         <!-- <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
                             <h2>Video</h2>
@@ -136,11 +224,13 @@
                             
                         </div> -->
                         <div class="tab-pane fade" id="conclusiones" role="tabpanel" aria-labelledby="conclusiones-tab">
-                            <h2>Conclusiones</h2>
-                            
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
-                            <div><img src=" " loading="lazy" alt="" width="50%"></div>
-                            </figure>    
+                            <h2>Reflexiones y conclusiones</h2>
+                            <p>Responde:</p>
+                            <p>1.	¿Qué temas del curso están relacionados con este proyecto?</p>
+                            <p>2.	¿Se podría usar una estrategia de fuerza bruta para resolver el problema de la mochila? ¿Cuáles serían las limitaciones?</p>
+                            <p>3.	¿Se te ocurre alguna otra forma de buscar soluciones al problema de la mochila?</p>
+                            <p>4.	¿Dejarías que un robot o una computadora tomara una decisión por ti?</p>
+                            <p>5.	Si tuvieras que resolver el problema de la mochila con 1000 objetos en juego, ¿preferirías hacerlo tú o se lo encargarías a una computadora?</p>
                         </div>
                         <!--Cuestionario-->
                         <!-- <div class="tab-pane fade" id="cuestionario" role="tabpanel" aria-labelledby="cuestionario-tab">

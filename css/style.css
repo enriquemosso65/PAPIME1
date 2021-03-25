@@ -159,10 +159,6 @@ td{
 }
 
 /* footer */
-
-
-
-
 .bgDark {
     overflow: hidden;
     margin-top: 250px;
@@ -173,6 +169,7 @@ td{
     text-align: center;
     color: #ffffff;
 } 
+/* new */
 .accent {
     font-size: 20px;
 }
@@ -182,4 +179,6 @@ table{
 .w-richtext-align-center  {
     text-align: center;
 }
- 
+.lista{
+    text-indent: 3em;
+}
