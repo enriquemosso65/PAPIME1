@@ -17,7 +17,10 @@ body {
 h1 { font-size: 66px; font-weight: 700; line-height: 80px; }
 h2 { font-size: 48px; margin-bottom: 30px; }
 h3 { font-size: 33px; }
-h5 { color:greenyellow }
+h5 { color:rgb(255, 255, 255) }
+.nombre_responsable{
+    color: #999
+}
 .btn {
     font-size: 14px;
     padding: 15px 26px;
