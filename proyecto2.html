@@ -99,20 +99,30 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="objetivo" role="tabpanel" aria-labelledby="objetivo-tab">
                             <h2>Objetivo</h2>
-                            <p></p>
+                            <p>Diseñar un programa que permita planear rutas de navegación para robots utilizando el algoritmo de Dijkstra.</p>
                             <div   ><img src=" "   loading="lazy" alt="" width="50%" ></div>
                         </div>
                         <div class="tab-pane fade" id="introduccion" role="tabpanel" aria-labelledby="introduccion-tab">
                             <h2>Introducción</h2>
                             <!-- etiquetas p -->
-                            <p></p>
+                            <p>Redacta tu introducción contestando a las siguientes preguntas</p>
+                            <p>1. ¿Qué es un grafo?</p>
+                            <p>2. ¿Cuál es la diferencia entre un grafo dirigido y uno no dirigido?</p>
+                            <p>3. ¿Qué es un grafo ponderado?</p>
+                            <p>4. En teoría de grafos, ¿qué es un camino?</p>
+                            <p>5. ¿En qué consiste el problema del camino más corto? ¿Qué algoritmos existen para resolverlo?</p>
+                            <p>6. Explica el algoritmo de Dijkstra para resolver el problema del camino más corto. Incluye el pseudocódigo. </p>
+                            <p>7. Construye un grafo ponderado y muestra un ejemplo de cómo se aplica el algoritmo de Dijkstra para calcular el camino mínimo entre dos vértices. </p>
+                            <p>8. ¿Qué es un robot móvil? Incluye imágenes de algunos robots móviles terrestres, aéreos y acuáticos.  </p>
+                            <p>9. ¿Qué es la navegación de un robot móvil?</p>
+                            <p>La introducción es de mínimo 5 cuartillas, con tus palabras o citando correctamente las fuentes si se requiere. Puedes usar fuentes en línea, pero no es válido hacer “copiar y pegar”. </p>
                             <figure class="w-richtext-align-center w-richtext-figure-type-image">
                             <div><img src=" " loading="lazy" alt="" width="50%" ></div>
                             </figure>
                         </div>
                         <div class="tab-pane fade" id="defpro" role="tabpanel" aria-labelledby="defpro-tab">
                             <h2>Definición del Problema</h2>
-                            <p> </p>
+                            <p>Una de las principales características de un robot móvil es su capacidad de navegar en el ambiente. Vamos a suponer que estamos trabajando con un dron de vigilancia y lo utilizaremos para hacer recorridos por la noche en una escuela. Deseamos diseñar un programa que nos permita crear recorridos de navegación para nuestro robot, expresados a través de grafos. Una vez creado el grafo de navegación, queremos la posibilidad de que se calcule la ruta más rápida para moverse de un lugar a otro a través del grafo.</p>
                             <p> </p>
                             <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src=" " loading="lazy" alt="" width="50%"></div>
@@ -120,7 +130,57 @@
                         </div>
                         <div class="tab-pane fade" id="procedimiento" role="tabpanel" aria-labelledby="procedimiento-tab">
                             <h2>Procedimiento</h2>
-                            <p>  </p>
+                            <p>Implementa un programa para la creación y planeación de rutas de un dron. La interfaz de tu programa debe tener OBLIGATORIAMENTE el siguiente aspecto:</p>
+                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                                <div><img src="images/p2a.PNG" class="img-fluid"   alt="grafica"></div>
+                                <figcaption> </figcaption>
+                            </figure>
+                            <p>En el lado izquierdo hay tres botones, y en el lado derecho existe un área donde se irá mostrando el grafo que va construyendo el usuario. Al iniciar el programa, debe estar vacío. </p>
+                            <p>Vamos a suponer que la superficie del mapa es un cuadrado de 100 metros de lado, y usaremos un sistema de coordenadas con x en el eje horizontal, y en el eje vertical, el origen en la esquina inferior izquierda, y la coordenada (100,100) en la esquina superior derecha.</p>
+                            <p>Cuando el usuario presiona los botones de la izquierda suceden los siguientes eventos:</p>
+                            <p>1.- CREAR VÉRTICE</p>
+                            <p>El programa solicita datos al usuario (puede ser en una nueva ventana o puedes usar el espacio disponible debajo de los botones). Los datos que solicitará son:</p>
+                            <p>a) Nombre del nuevo vértice</p>
+                            <p>b) Posición</p>
+                            <p>Como ejemplo, si el usuario elige el nombre A, y elige la posición (25,50), entonces se dibujaría el nuevo vértice en el mapa. </p>
+                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                                <div><img src="images/p2b.PNG" class="img-fluid"   alt="grafica"></div>
+                                <figcaption> </figcaption>
+                            </figure>
+                            <p>El usuario puede crear todos los vértices que quiera (uno por cada ocasión que se presiona el botón). Por ejemplo, aquí se muestra el resultado de agregar 10 vértices.</p>
+                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                                <div><img src="images/p2c.PNG" class="img-fluid"   alt="grafica"></div>
+                                <figcaption> </figcaption>
+                            </figure>
+                            <p>2.- CREAR ARISTA</p>
+                            <p>a) Vértice inicial</p>
+                            <p>b) Vértice final</p>
+                            <p>Como ejemplo, si el usuario elige a los vértices D y J, el resultado será el siguiente.</p>
+                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                                <div><img src="images/p2d.PNG" class="img-fluid"   alt="grafica"></div>
+                                <figcaption> </figcaption>
+                            </figure>
+                            <p>El usuario puede crear todas las aristas que quiera (una por cada ocasión que se presiona el botón). Por ejemplo, aquí se muestra el resultado de agregar 10 aristas.</p>
+                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                                <div><img src="images/p2e.PNG" class="img-fluid"   alt="grafica"></div>
+                                <figcaption> </figcaption>
+                            </figure>
+                            <p>3.- CALCULAR MEJOR RUTA</p>
+                            <p>El programa solicita datos al usuario (puede ser en una nueva ventana o puedes usar el espacio disponible debajo de los botones). Los datos que solicitará son:</p>
+                            <p>a) Vértice inicial</p>
+                            <p>b) Vértice final</p>
+                            <p>El programa calculará la ruta más corta del vértice inicial al vértice final y la mostrará cambiando el color de las aristas que forman parte del camino.</p>
+                            <p>Nota: el peso que tiene cada arista corresponde a la distancia euclidiana entre sus puntos extremos.</p>
+                            <p>Como ejemplo, si el usuario elige a los vértices I y F, el resultado será el siguiente.</p>
+                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                                <div><img src="images/p2f.PNG" class="img-fluid"   alt="grafica"></div>
+                                <figcaption> </figcaption>
+                            </figure>
+                            <p>Reporte de resultados</p>
+                            <p>Para mostrar el resultado de tu proyecto debes:</p>
+                            <p>1. Incluir el código fuente completo</p>
+                            <p>2. Presentar tres casos de prueba con grafos distintos (con 10, 15 y 20 vértices respectivamente). Para cada uno de ellos muestra un grafo creado y la ruta más corta entre dos vértices.</p>
+                            <p>3. Deberás crear un video de tu programa siendo ejecutado en una computadora. </p>
                             
                 
                         </div>
@@ -137,6 +197,16 @@
                         </div> -->
                         <div class="tab-pane fade" id="conclusiones" role="tabpanel" aria-labelledby="conclusiones-tab">
                             <h2>Conclusiones</h2>
+                            <p>Responde</p>
+                            <p>1. Si tuvieras 10 vértices, ¿cuál es el número máximo de aristas diferentes que podrías dibujar?</p>
+                            <p>2. Imagina que calculas el camino más corto entre I y F. El dron se encuentra en I, y la ruta que debe seguir es I-A-D-J-F. Cuando se encuentra en el punto A y trata de avanzar a D detecta un obstáculo que no le permite avanzar. ¿Sería posible replanear la ruta para llegar al objetivo? Explícalo de manera breve mediante un pseudocódigo.</p>
+                            <p>3. En el ejemplo de grafo mostrado en este documento, ¿qué sucedería si se pide calcular el camino más corto de B a G? </p>
+                            <p>En el programa que elaboraste, un humano es el que crea los vértices y las aristas. Esta decisión se hace seleccionando de forma manual los puntos y aristas en los que el dron se puede mover en el ambiente sin chocar con un obstáculo. Imaginemos que se cuenta con una imagen en blanco y negro que representa el espacio donde operará el dron. Las zonas de color negro son obstáculos (por ejemplo, edificios) por donde no puede atravesar el dron. Redacta algunas ideas que se te ocurran para aprovechar este mapa de obstáculos para mejorar o automatizar la creación de grafos de navegación.  </p>
+                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                                <div><img src="images/p2g.PNG" class="img-fluid"   alt="grafica"></div>
+                                <figcaption> </figcaption>
+                            </figure>
+
                             
                             <figure class="w-richtext-align-center w-richtext-figure-type-image">
                             <div><img src=" " loading="lazy" alt="" width="50%"></div>
